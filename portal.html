@@ -4,48 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/portal.css">
+    
+    
     <title>Portal</title>
 </head>
 <body>
-    <div>
-        <h1>Portal Aluno - SAJA</h1>
-        <h2>Esther Breia</h2>
-        <h3>Aluno(a)</h3>
-        <h3>Disciplina: Java</h3>
-        <p> escrever escrever escrever escrever<br>
-            instruçoes instruçoes escrever
+
     
-        </p>
-        <img src="assets/img/" class="" alt="">
+      <div id="topo">
+            <h1>Portal Aluno - SAJA</h1>
+        </div>
+
+    <div id="container">
+      
+        <div id="menu-lateral">
+            <a href="#" onclick="mostrar('home')">
+                <img src="assets/img/casa.png" class="img-menu-lateral">
+            </a>
+
+            <a href="#" onclick="mostrar('perfil')">
+                <img src="assets/img/do-utilizador.png" class="img-menu-lateral">
+            </a>
+
+            <a href="#" onclick="mostrar('notas')">
+                <img src="assets/img/chapeu-de-graduacao.png" alt="" class="img-menu-lateral"> 
+            </a>
+
+            <a href="#" onclick="mostrar('contato')">
+                <img src="assets/img/envelope.png" alt="" class="img-menu-lateral">
+            </a>
+        </div>
+        <div id="conteudo">
+       
+            <div id="home">Conteúdo Home
+
+
+            </div>
+
+            <div id="perfil" style="display: none;">Conteúdo Perfil
+                
+                <h2>Esther Breia</h2>
+                <h3>Aluno(a)</h3>
+
+            </div>
+
+            <div id="notas" style="display: none;">Conteúdo notas
+                <table id=notas style="width: 500px;">
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>Nota</th>
+                    <tr>
+                        <td>Fundamentos Java</td>
+                        <td>9.5</td>
+                        <th>Frequência</th>
+                        <th>Professor(a)</th>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>--</td>
+                        <td><a href="#">Editar</a></td>
+                        <td>João</td>
+                    </tr>
+                        <td>85%</td>
+                        <td>Maria</td>
+                    </tr>
+                    <tr>
+                        <td>Html</td>
+                        <td>8.0</td>
+                        <td>100%</td>
+                        <td>Flávio</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div id="contato" style="display: none;">Conteúdo contato
+
+
+            </div>
+        </div>
     </div>
 
-    <h2>Notas</h2>
-    <table style="width: 500px;">
-        <tr>
-            <th>Disciplina</th>
-            <th>Nota</th>
-            <th>Frequência</th>
-            <th>Professor(a)</th>
-        </tr>
-        <tr>
-            <td>Java</td>
-            <td>--</td>
-            <td><a href="#">Editar</a></td>
-            <td>João</td>
-        </tr>
-        <tr>
-            <td>Fundamentos Java</td>
-            <td>9.5</td>
-            <td><a href="#">Editar</a></td>
-            <td>Maria</td>
-        </tr>
-         <tr>
-            <td>Html</td>
-            <td>Maria</td>
-            <td><a href="#"><img src="assets/" class="imglink"></a></td>
-            <td>Flávio</td>
-        </tr>
+    <script src="assets/script/main.js"></script>
 
-    </table>
 </body>
 </html>
