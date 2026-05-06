@@ -9,19 +9,34 @@
 </head>
 
 <body>
-    <div class="login">
-        <h1>Portal Acadêmico - SAJA</h1>
-        <form onsubmit="return login()">
-            Email <input type="email" name="email"> <br>
-            Senha <input type="password" name="password">
+    <header>
+        <h1>Portal Acadêmico</h1>
+    </header>
 
+    <div>
+        <img src="assets/img/logo.png" alt="" class="logo">
+    </div>
+
+    <div class="login">
+        
+        <form onsubmit="return login()">
+            <p>Email</p>
+            <input type="email" name="email"> 
+            <p>Senha</p>
+            <input type="password" name="password"> 
+            
             <div class="box-btn">           
-                <button type="submit" class="btn-login">Entrar</button>
+                <button type="submit" class="btn-login">Entrar</button> <br>
                 <a href="#" class="btn-login">Cadastrar</a>
             </div>
         </form>
     </div>
-    
+
+    <footer class="footer">
+        <p> ® 2026 - Todos os direitos reservados</p>
+    </footer>
+
+
     <script src="assets/script/main.js"></script>
 </body>
 </html>

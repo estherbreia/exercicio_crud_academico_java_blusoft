@@ -4,12 +4,44 @@ body {
     height: 100vh;
 
     display: flex;
-    justify-content: center; /* horizontal */
+    justify-content: space-between; /* horizontal */
     align-items: center;     /* vertical */
+    flex-direction: column;
 
     font-family: Arial, sans-serif;
-
-    background: linear-gradient(90deg, #020024, #090979, #00d4ff);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     
+}
+
+header{
+    color: black;
+}
+
+.login{
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer{
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+}
+
+.btn-login{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 200px;
 }
